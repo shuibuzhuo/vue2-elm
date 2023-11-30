@@ -8,6 +8,8 @@ const smp = new SpeedMeasurePlugin({
 });
 
 module.exports = {
+  publicPath: "./",
+  parallel: true,
   configureWebpack: smp.wrap({
     resolve: {
       alias: {
